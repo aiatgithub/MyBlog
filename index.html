@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="auto">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="styles.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,112 +17,141 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         header, footer {
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
         }
+
         .avatar-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .avatar {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             border: 2px solid #00ffcc;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
         }
+
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: inline-block;
+            margin: 0 10px;
         }
+
         nav a {
             color: #ffcc00;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
-    
+
+        nav a:hover {
+            color: white;
+        }
+
+        .erp-button {
+            background: #00c2ff;
+            color: black !important;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
         .content-box {
-    background-color: #f7e7ce;
-    color: #2f4f4f;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 700px;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    text-align: left;
-}
+            background-color: #f7e7ce;
+            color: #2f4f4f;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 700px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            text-align: left;
+        }
 
-.content-box h2 {
-    color: #800020;
-}
+        .content-box h2 {
+            color: #800020;
+        }
 
-.content-box blockquote {
-    font-style: italic;
-    color: #555;
-    margin: 20px 0;
-    padding-left: 15px;
-    border-left: 4px solid #a2d5f2;
-}
+        .content-box blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            padding-left: 15px;
+            border-left: 4px solid #a2d5f2;
+        }
 
-.content-image {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 20px;
-}    
+        .content-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
         footer {
             margin-top: auto;
         }
     </style>
 </head>
 <body>
-    <header>
-      <button onclick="window.location.href='tender.html'" 
-style="
-background:#00c2ff;
-color:black;
-padding:12px;
-border:none;
-border-radius:10px;
-font-weight:bold;
-cursor:pointer;
-margin-top:15px;
-">
-📊 Открыть калькулятор ERP
-      </button>  
-        <div class="avatar-container">
-            <img id="avatar" class="avatar" src="https://i.postimg.cc/kgWZkJzy/IMG-20250329-173753-561.webp" alt="Аватар">
-        </div>
-        <h1>Мой блог</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="text.html">Новости</a></li>
-                <li><a href="photo.html">Фото</a></li>
-                <li><a href="video.html">Видео</a></li>
-            </ul>
-        </nav>
-    </header>
-        <div class="content-box">
-            
+
+<header>
+
+    <div class="avatar-container">
+        <img
+            id="avatar"
+            class="avatar"
+            src="https://i.postimg.cc/kgWZkJzy/IMG-20250329-173753-561.webp"
+            alt="Аватар">
+    </div>
+
+    <h1>Мой блог</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="text.html">Новости</a></li>
+            <li><a href="photo.html">Фото</a></li>
+            <li><a href="video.html">Видео</a></li>
+
+            <li>
+                <a href="tender.html" class="erp-button">
+                    📊 Калькулятор ERP
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<div class="content-box">
+
     <h2>Добро пожаловать в мой блог!</h2>
-            
+
     <p>Здесь я публикую интересные материалы.</p>
 
-    <img src="https://i.postimg.cc/MKVNvZ5v/IMG-20250425-003553-481.webp" alt="Момент жизни" class="content-image">
-            
-    <blockquote>“Писать — значит пережить мгновение дважды.”</blockquote>
-                 
-  </div>
-    </main>
-    <footer>
-        
-        <p>&copy; 2025 Мой блог</p>
-    </footer>
+    <img
+        src="https://i.postimg.cc/MKVNvZ5v/IMG-20250425-003553-481.webp"
+        alt="Момент жизни"
+        class="content-image">
 
-   
+    <blockquote>
+        “Писать — значит пережить мгновение дважды.”
+    </blockquote>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Мой блог</p>
+</footer>
+
+</body>
+</html>
